@@ -5,7 +5,6 @@ class Rout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isSearchVisible: false,
       isButtonClicked: false,
     };
   }
@@ -23,15 +22,6 @@ class Rout extends Component {
   
 
   render() {
-    const buttonStyle = {
-      backgroundColor: this.state.isButtonClicked ? 'blue' : 'initial',
-      // Ajoutez d'autres styles selon vos besoins
-      padding: '10px',
-      border: 'none',
-      cursor: 'pointer',
-    };
-    const { isSearchVisible } = this.state;
-
     const handleLogout = () => {
       // Logique de déconnexion à mettre ici
       console.log('Déconnexion effectuée');
